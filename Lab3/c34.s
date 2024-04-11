@@ -43,16 +43,16 @@ _start:
 	mov 3(%eax), %dl
 	mov 4(%eax), %bl
 	mov 5(%eax), %cl
-	subl $48, %edx
+	#subl $48, %edx
 	subl $48, %ebx
 	subl $48, %ecx
 	imull $10, %ebx
 	addl %ecx, %ebx
-	cmp $0, %dl
+	cmp $48, %dl
 	je .nam_khong
-	cmp $1, %dl
+	cmp $49, %dl
 	je .nu_khong
-	cmp $2, %dl
+	cmp $50, %dl
 	je .nam_mot
 	movl $age1, %eax
 	addl (%eax), %ebx

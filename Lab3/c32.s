@@ -32,7 +32,7 @@ _start:
 	mov (%ebx, %eax), %cl
 	cmp $97, %ecx
 	jl .end_loop
-	cmp $142, %ecx
+	cmp $122, %cl
 	jg .end_loop
 	subl $32, %ecx
 	mov %cl, (%ebx, %eax)
